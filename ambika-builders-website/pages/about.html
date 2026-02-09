@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Trust Center | Ambika Builders & Real Estate</title>
+    <meta name="description" content="Learn about Ambika Builders' 17+ year legacy of trust, excellence, and luxury real estate development in Indore.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#C5A059',
+                            light: '#D4AF37',
+                            dark: '#B8860B'
+                        },
+                        background: {
+                            dark: '#0B1221',
+                            DEFAULT: '#121212'
+                        },
+                        surface: {
+                            dark: '#161B26',
+                            charcoal: '#1A1A1A',
+                            navy: '#141C2F'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .office-overlay-section {
+            background: linear-gradient(to bottom, rgba(11, 18, 33, 0.95), rgba(11, 18, 33, 0.85)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .gold-star {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+            color: #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-slate-300 font-sans antialiased selection:bg-primary selection:text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-background-dark/90 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center">
+                <span class="font-display text-2xl tracking-[0.2em] text-primary font-bold">AMBIKA</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-10 text-[10px] font-bold tracking-[0.2em] uppercase">
+                <a href="../index.html" class="hover:text-primary transition-colors text-white">Home</a>
+                <a href="properties.html" class="hover:text-primary transition-colors text-white">Projects</a>
+                <a href="about.html" class="text-primary">About Us</a>
+                <a href="services.html" class="hover:text-primary transition-colors text-white">Services</a>
+                <a href="contact.html" class="hover:text-primary transition-colors text-white">Trust Center</a>
+                <a href="contact.html" class="bg-primary text-background-dark px-8 py-2.5 rounded-sm hover:brightness-110 transition-all shadow-[0_0_20px_rgba(197,160,89,0.2)]">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-toggle" class="md:hidden p-2 text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 top-20 bg-background-dark/98 backdrop-blur-xl z-40">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="../index.html" class="text-2xl font-display text-white hover:text-primary">Home</a>
+                <a href="properties.html" class="text-2xl font-display text-white hover:text-primary">Projects</a>
+                <a href="about.html" class="text-2xl font-display text-primary">About Us</a>
+                <a href="services.html" class="text-2xl font-display text-white hover:text-primary">Services</a>
+                <a href="contact.html" class="text-2xl font-display text-white hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="h-20"></div>
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-10 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=80" 
+                 alt="Ambika Builders Office Interior" 
+                 class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-background-dark via-background-dark/80 to-background-dark"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-3 px-4 py-1.5 border border-primary/30 bg-primary/5 text-primary text-[10px] tracking-[0.3em] uppercase rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span>Established 2007</span>
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-white">
+                    Crafting<br>
+                    <span class="text-primary italic">Legacies</span>
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed max-w-xl font-light">
+                    Ambika Builders & Real Estate began with a singular vision: to redefine the landscape of Indore through transparency, integrity, and architectural excellence. Since 2007, we have turned over 500 dreams into luxury rowhouses.
+                </p>
+                <div class="flex items-center space-x-8 lg:space-x-12 pt-4">
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-display text-primary mb-1">17+</div>
+                        <div class="text-[10px] tracking-[0.2em] uppercase text-slate-500 font-bold">Years of Trust</div>
+                    </div>
+                    <div class="w-px h-12 lg:h-16 bg-white/10"></div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-display text-primary mb-1">500+</div>
+                        <div class="text-[10px] tracking-[0.2em] uppercase text-slate-500 font-bold">Happy Families</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute -inset-8 lg:-inset-10 bg-primary/10 rounded-full blur-[100px]"></div>
+                <div class="relative bg-surface-navy p-3 rounded-sm shadow-2xl overflow-hidden border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" 
+                         alt="Founder Portrait" 
+                         class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-10 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent">
+                        <p class="font-display text-xl lg:text-2xl text-white mb-1">The Visionary</p>
+                        <p class="text-[10px] tracking-widest uppercase text-primary font-bold">Driving Indore's Real Estate Renaissance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-surface-charcoal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
+                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-white mb-6">Why Choose Ambika?</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-400 text-lg font-light leading-relaxed">Our foundation is built on three pillars of excellence that set us apart in the central Indian market.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <div class="group p-8 lg:p-12 bg-surface-navy/50 border border-white/5 hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 -mr-16 -mt-16 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+                    <div class="w-16 h-16 bg-white/5 flex items-center justify-center mb-8 lg:mb-10 group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">gavel</span>
+                    </div>
+                    <h3 class="font-display text-xl lg:text-2xl mb-4 lg:mb-6 text-white group-hover:text-primary transition-colors">Transparent Paperwork</h3>
+                    <p class="text-slate-500 leading-relaxed font-light">No hidden clauses. Every legal document is shared upfront, ensuring a zero-hassle registration process from day one.</p>
+                </div>
+                
+                <div class="group p-8 lg:p-12 bg-surface-navy/50 border border-white/5 hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 -mr-16 -mt-16 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+                    <div class="w-16 h-16 bg-white/5 flex items-center justify-center mb-8 lg:mb-10 group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">location_on</span>
+                    </div>
+                    <h3 class="font-display text-xl lg:text-2xl mb-4 lg:mb-6 text-white group-hover:text-primary transition-colors">Local Expertise</h3>
+                    <p class="text-slate-500 leading-relaxed font-light">Indore-born and bred. We understand the city's pulse and identify the most high-value growth corridors for your investment.</p>
+                </div>
+                
+                <div class="group p-8 lg:p-12 bg-surface-navy/50 border border-white/5 hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 -mr-16 -mt-16 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+                    <div class="w-16 h-16 bg-white/5 flex items-center justify-center mb-8 lg:mb-10 group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">diamond</span>
+                    </div>
+                    <h3 class="font-display text-xl lg:text-2xl mb-4 lg:mb-6 text-white group-hover:text-primary transition-colors">Premium Quality</h3>
+                    <p class="text-slate-500 leading-relaxed font-light">From imported marble to high-grade fittings, we only use A+ materials that stand the test of time and luxury.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-24 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 lg:mb-20 gap-6">
+                <div class="max-w-2xl">
+                    <div class="text-primary text-[10px] tracking-[0.4em] uppercase font-bold mb-4">Wall of Fame</div>
+                    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-white">Happy Homeowners</h2>
+                </div>
+                <div class="flex space-x-4">
+                    <button class="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary group transition-all" aria-label="Previous testimonial">
+                        <span class="material-symbols-outlined text-white group-hover:text-background-dark">arrow_back</span>
+                    </button>
+                    <button class="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary group transition-all" aria-label="Next testimonial">
+                        <span class="material-symbols-outlined text-white group-hover:text-background-dark">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-surface-charcoal p-8 lg:p-10 rounded-sm border border-white/5 hover:bg-surface-navy transition-colors group">
+                    <div class="relative mb-6 lg:mb-8">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80" 
+                             alt="Client with keys" 
+                             class="w-full h-56 lg:h-72 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 bg-primary text-background-dark text-[9px] uppercase tracking-widest px-4 py-2 font-black">Handover Ceremony</div>
+                    </div>
+                    <div class="flex space-x-1 mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                    </div>
+                    <p class="text-slate-300 font-light leading-relaxed italic mb-6 lg:mb-8">"Ambika Builders made our home-buying journey so smooth. The transparency was remarkable."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" 
+                             alt="Rajesh Sharma" 
+                             class="w-12 h-12 rounded-full object-cover border border-primary/20">
+                        <div>
+                            <p class="font-bold text-white text-sm">Mr. Rajesh Sharma</p>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-surface-charcoal p-8 lg:p-10 rounded-sm border border-white/5 hover:bg-surface-navy transition-colors group">
+                    <div class="relative mb-6 lg:mb-8">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80" 
+                             alt="Family at site" 
+                             class="w-full h-56 lg:h-72 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 bg-primary text-background-dark text-[9px] uppercase tracking-widest px-4 py-2 font-black">Dream Home Delivered</div>
+                    </div>
+                    <div class="flex space-x-1 mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                    </div>
+                    <p class="text-slate-300 font-light leading-relaxed italic mb-6 lg:mb-8">"The attention to detail in their luxury rowhouses is unmatched. They don't just build houses."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" 
+                             alt="Anjali Kapoor" 
+                             class="w-12 h-12 rounded-full object-cover border border-primary/20">
+                        <div>
+                            <p class="font-bold text-white text-sm">Ms. Anjali Kapoor</p>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">IT Professional</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-surface-charcoal p-8 lg:p-10 rounded-sm border border-white/5 hover:bg-surface-navy transition-colors group">
+                    <div class="relative mb-6 lg:mb-8">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80" 
+                             alt="Rowhouse Exterior" 
+                             class="w-full h-56 lg:h-72 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 bg-primary text-background-dark text-[9px] uppercase tracking-widest px-4 py-2 font-black">Project Completed</div>
+                    </div>
+                    <div class="flex space-x-1 mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                        <span class="material-symbols-outlined gold-star">star</span>
+                    </div>
+                    <p class="text-slate-300 font-light leading-relaxed italic mb-6 lg:mb-8">"Finding a builder you can trust is hard, but Ambika has earned my respect with their honesty."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&q=80" 
+                             alt="Dr. Verma" 
+                             class="w-12 h-12 rounded-full object-cover border border-primary/20">
+                        <div>
+                            <p class="font-bold text-white text-sm">Dr. Amit Verma</p>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Cardiologist</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Verified & Certified -->
+    <section class="py-24 office-overlay-section border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="font-display text-3xl md:text-4xl mb-4 lg:mb-6 text-white">Verified & Certified</h2>
+            <p class="text-slate-400 mb-12 lg:mb-20 max-w-2xl mx-auto font-light text-lg">We operate with 100% compliance. All our projects are registered under RERA and meet the highest global standards.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+                <div class="flex flex-col items-center group">
+                    <div class="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center bg-white/5 rounded-full border border-white/10 group-hover:border-primary group-hover:bg-primary/5 transition-all mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined text-4xl lg:text-5xl text-white group-hover:text-primary transition-all">verified</span>
+                    </div>
+                    <p class="text-[10px] tracking-[0.3em] uppercase font-bold text-primary">RERA Registered</p>
+                </div>
+                
+                <div class="flex flex-col items-center group">
+                    <div class="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center bg-white/5 rounded-full border border-white/10 group-hover:border-primary group-hover:bg-primary/5 transition-all mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined text-4xl lg:text-5xl text-white group-hover:text-primary transition-all">verified_user</span>
+                    </div>
+                    <p class="text-[10px] tracking-[0.3em] uppercase font-bold text-primary">ISO 9001:2015</p>
+                </div>
+                
+                <div class="flex flex-col items-center group">
+                    <div class="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center bg-white/5 rounded-full border border-white/10 group-hover:border-primary group-hover:bg-primary/5 transition-all mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined text-4xl lg:text-5xl text-white group-hover:text-primary transition-all">balance</span>
+                    </div>
+                    <p class="text-[10px] tracking-[0.3em] uppercase font-bold text-primary">Legal Compliance</p>
+                </div>
+                
+                <div class="flex flex-col items-center group">
+                    <div class="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center bg-white/5 rounded-full border border-white/10 group-hover:border-primary group-hover:bg-primary/5 transition-all mb-4 lg:mb-6">
+                        <span class="material-symbols-outlined text-4xl lg:text-5xl text-white group-hover:text-primary transition-all">apartment</span>
+                    </div>
+                    <p class="text-[10px] tracking-[0.3em] uppercase font-bold text-primary">A-Grade Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto relative group">
+            <div class="absolute inset-0 bg-primary rotate-1 scale-[1.02] rounded-sm -z-10 opacity-20 group-hover:rotate-0 transition-transform"></div>
+            <div class="bg-primary p-10 md:p-16 lg:p-24 text-center rounded-sm relative overflow-hidden">
+                <div class="absolute inset-0 bg-background-dark opacity-10 pointer-events-none">
+                    <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                        <path d="M0 100 L100 0 L100 100 Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-background-dark font-bold mb-4 lg:mb-8">Ready to Build Your Legacy?</h2>
+                    <p class="text-background-dark/80 text-lg lg:text-xl mb-8 lg:mb-12 max-w-2xl mx-auto font-medium">Speak with our expert consultants today and discover how Ambika can turn your vision into a landmark.</p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="tel:+917312531151" class="bg-background-dark text-primary px-8 lg:px-12 py-4 lg:py-5 font-bold text-sm tracking-widest uppercase hover:bg-black transition-all inline-flex items-center">
+                            <span class="material-symbols-outlined mr-3">phone</span>
+                            Call Now
+                        </a>
+                        <a href="contact.html" class="bg-transparent border-2 border-background-dark text-background-dark px-8 lg:px-12 py-4 lg:py-5 font-bold text-sm tracking-widest uppercase hover:bg-background-dark hover:text-primary transition-all">
+                            Schedule Visit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-background-dark pt-20 lg:pt-32 pb-12 lg:pb-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 mb-16 lg:mb-32">
+                <div class="lg:col-span-2 space-y-8">
+                    <span class="font-display text-2xl lg:text-3xl tracking-[0.3em] text-primary font-bold">AMBIKA</span>
+                    <p class="text-slate-500 max-w-sm leading-relaxed text-base lg:text-lg font-light">
+                        Redefining the skylines of Indore with luxury rowhouses and exceptional real estate services since 2007.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
+                            <span class="material-symbols-outlined text-lg lg:text-xl">share</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
+                            <span class="material-symbols-outlined text-lg lg:text-xl">public</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 lg:mb-8 text-white uppercase tracking-[0.3em] text-xs">Quick Links</h4>
+                    <ul class="space-y-3 lg:space-y-4 text-slate-500 text-sm">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Our Legacy</a></li>
+                        <li><a href="properties.html" class="hover:text-primary transition-colors">Ongoing Projects</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Trust Center</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 lg:mb-8 text-white uppercase tracking-[0.3em] text-xs">Visit Us</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4 lg:mb-6 font-light">
+                        Ambika Office Tower,<br>
+                        Vijay Nagar, Indore,<br>
+                        Madhya Pradesh - 452010
+                    </p>
+                    <p class="text-primary font-bold text-sm tracking-widest">info@ambikabuilders.com</p>
+                </div>
+            </div>
+            <div class="pt-8 lg:pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-[0.2em] font-bold">
+                <p>© 2024 Ambika Builders & Real Estate. All rights reserved.</p>
+                <div class="flex space-x-8 lg:space-x-10">
+                    <a href="#" class="hover:text-primary">Terms of Service</a>
+                    <a href="#" class="hover:text-primary">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917312531151" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform group">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.511 1.944.851 3.146.851 3.181 0 5.765-2.586 5.765-5.766 0-3.18-2.584-5.765-5.765-5.765zm3.387 8.313c-.154.434-.891.791-1.243.844-.353.053-.7.09-1.204-.104-.504-.194-1.127-.459-1.89-1.124-.763-.665-1.32-1.488-1.564-1.926-.243-.438-.023-.675.186-.908.21-.233.438-.514.656-.771.218-.257.291-.438.438-.731.146-.293.073-.549-.036-.771-.109-.222-.982-2.368-1.346-3.243-.364-.875-.728-.755-.982-.755-.254 0-.547-.008-.838-.008-.291 0-.765.109-1.166.547-.4.438-1.528 1.496-1.528 3.646 0 2.15 1.564 4.231 1.782 4.524.218.293 3.081 4.706 7.464 6.606 1.042.451 1.855.72 2.488.921 1.045.331 1.996.284 2.748.171.838-.127 2.582-1.056 2.946-2.08.364-1.024.364-1.9.255-2.081-.109-.181-.4-.293-.838-.509z"/>
+        </svg>
+        <span class="absolute right-full mr-3 bg-surface-dark text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10">Quick WhatsApp Inquiry</span>
+    </a>
+    
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

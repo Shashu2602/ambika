@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Services | Ambika Builders & Real Estate</title>
+    <meta name="description" content="Expert real estate services including Legal Desk, Financial Assistance, Vaastu, and Construction in Indore.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#D4AF37',
+                            copper: '#C08261',
+                            light: '#E2C285'
+                        },
+                        background: {
+                            dark: '#0A0D12',
+                            DEFAULT: '#121212'
+                        },
+                        surface: {
+                            dark: '#121721',
+                            DEFAULT: '#151B23'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(10, 13, 18, 0.7), rgba(10, 13, 18, 1));
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            background-color: rgba(10, 13, 18, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-slate-300 font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 border-b border-white/5 nav-blur px-6 py-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="../index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 border border-primary/50 flex items-center justify-center">
+                    <span class="font-display text-primary text-2xl">A</span>
+                </div>
+                <div class="hidden md:block">
+                    <h1 class="font-display text-base tracking-[0.2em] text-white leading-none">Ambika Builders</h1>
+                    <p class="text-[9px] tracking-[0.3em] uppercase text-primary mt-1">Established 2007</p>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex space-x-10 items-center text-[10px] uppercase tracking-[0.25em] font-medium text-slate-400">
+                <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="properties.html" class="hover:text-primary transition-colors">Portfolio</a>
+                <a href="services.html" class="text-primary border-b border-primary/30 pb-1">Services</a>
+                <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            
+            <a href="contact.html" class="border border-primary text-primary px-8 py-2.5 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-primary hover:text-background-dark transition-all duration-300">
+                Inquire
+            </a>
+            
+            <button id="mobile-menu-toggle" class="md:hidden p-2 text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 top-[80px] bg-background-dark/98 backdrop-blur-xl z-40">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="../index.html" class="text-2xl font-display text-white hover:text-primary">Home</a>
+                <a href="properties.html" class="text-2xl font-display text-white hover:text-primary">Portfolio</a>
+                <a href="services.html" class="text-2xl font-display text-primary">Services</a>
+                <a href="contact.html" class="text-2xl font-display text-white hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="h-[80px]"></div>
+    
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" 
+             alt="Modern office interior" 
+             class="absolute inset-0 w-full h-full object-cover scale-110">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h2 class="font-display text-primary text-xs tracking-[0.5em] uppercase mb-6 opacity-90">Distinguished Expertise</h2>
+            <h1 class="font-serif text-5xl md:text-7xl text-white mb-8 leading-tight">Specialized Services</h1>
+            <div class="w-16 h-[2px] bg-primary mx-auto"></div>
+        </div>
+    </header>
+    
+    <!-- Services Grid -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
+            
+            <!-- Legal Service -->
+            <div class="group p-10 bg-background-dark hover:bg-surface-dark transition-all duration-500">
+                <span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">gavel</span>
+                <h3 class="font-display text-lg tracking-widest text-white mb-5 uppercase">Legal & Documentation</h3>
+                <p class="text-sm leading-relaxed text-slate-400 mb-8 font-light">
+                    Meticulous assistance with RERA compliance, property mutation, and verification of title deeds to safeguard your investment.
+                </p>
+                <ul class="text-[11px] space-y-3 tracking-widest uppercase text-slate-500">
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>RERA Registration</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Property Mutation</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Title Search Reports</li>
+                </ul>
+            </div>
+            
+            <!-- Financial Service -->
+            <div class="group p-10 bg-background-dark hover:bg-surface-dark transition-all duration-500">
+                <span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">account_balance</span>
+                <h3 class="font-display text-lg tracking-widest text-white mb-5 uppercase">Financial Support</h3>
+                <p class="text-sm leading-relaxed text-slate-400 mb-8 font-light">
+                    Exclusive partnerships with elite financial institutions to secure premium home loan rates tailored to your profile.
+                </p>
+                <ul class="text-[11px] space-y-3 tracking-widest uppercase text-slate-500">
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Priority Processing</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Portfolio Management</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Flexible Repayment</li>
+                </ul>
+            </div>
+            
+            <!-- Vaastu Service -->
+            <div class="group p-10 bg-background-dark hover:bg-surface-dark transition-all duration-500">
+                <span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">architecture</span>
+                <h3 class="font-display text-lg tracking-widest text-white mb-5 uppercase">Vaastu Shastra</h3>
+                <p class="text-sm leading-relaxed text-slate-400 mb-8 font-light">
+                    Integrating ancient Vedic wisdom with modern architecture to enhance the positive energy and prosperity of your home.
+                </p>
+                <ul class="text-[11px] space-y-3 tracking-widest uppercase text-slate-500">
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Energy Mapping</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Vedic Alignment</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Remedial Design</li>
+                </ul>
+            </div>
+            
+            <!-- Asset Management -->
+            <div class="group p-10 bg-background-dark hover:bg-surface-dark transition-all duration-500">
+                <span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">real_estate_agent</span>
+                <h3 class="font-display text-lg tracking-widest text-white mb-5 uppercase">Asset Management</h3>
+                <p class="text-sm leading-relaxed text-slate-400 mb-8 font-light">
+                    Comprehensive property yields through professional tenant screening, high-yield leasing, and maintenance.
+                </p>
+                <ul class="text-[11px] space-y-3 tracking-widest uppercase text-slate-500">
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Tenant Acquisition</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>ROI Optimization</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-primary/40 mr-3"></span>Legal Contracts</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Construction Portfolio -->
+    <section class="bg-surface-dark/40 py-24 px-6 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="font-display text-primary text-xs tracking-[0.4em] uppercase mb-4">Master Craftsmanship</h2>
+                    <h3 class="font-serif text-4xl md:text-5xl text-white leading-tight">Construction Portfolio</h3>
+                    <p class="mt-6 text-slate-400 text-lg leading-relaxed font-light">
+                        A visual testament to our unwavering commitment to structural integrity, precision engineering, and aesthetic grandeur.
+                    </p>
+                </div>
+                <div class="flex space-x-4">
+                    <button class="w-14 h-14 border border-white/10 text-white flex items-center justify-center hover:border-primary hover:text-primary transition-all" aria-label="Previous">
+                        <span class="material-symbols-outlined">west</span>
+                    </button>
+                    <button class="w-14 h-14 bg-primary text-background-dark flex items-center justify-center hover:bg-white transition-all" aria-label="Next">
+                        <span class="material-symbols-outlined font-bold">east</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" 
+                         alt="Architectural blueprint" 
+                         class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-700"></div>
+                    <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                        <span class="text-primary text-[10px] uppercase tracking-[0.3em] font-bold mb-2 block">Conceptual Phase</span>
+                        <h4 class="text-white font-display text-xl tracking-wide">Architectural Planning</h4>
+                        <div class="w-0 group-hover:w-full h-px bg-primary mt-4 transition-all duration-700 delay-100"></div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" 
+                         alt="Construction progress" 
+                         class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-700"></div>
+                    <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                        <span class="text-primary text-[10px] uppercase tracking-[0.3em] font-bold mb-2 block">Development</span>
+                        <h4 class="text-white font-display text-xl tracking-wide">Structural Integrity</h4>
+                        <div class="w-0 group-hover:w-full h-px bg-primary mt-4 transition-all duration-700 delay-100"></div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="group relative overflow-hidden aspect-[3/4]">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" 
+                         alt="Luxury rowhouse exterior" 
+                         class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-700"></div>
+                    <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                        <span class="text-primary text-[10px] uppercase tracking-[0.3em] font-bold mb-2 block">Handover</span>
+                        <h4 class="text-white font-display text-xl tracking-wide">Finished Residence</h4>
+                        <div class="w-0 group-hover:w-full h-px bg-primary mt-4 transition-all duration-700 delay-100"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-background-dark text-slate-500 py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-16">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="w-14 h-14 border border-primary/40 flex items-center justify-center">
+                            <span class="font-display text-primary text-3xl">A</span>
+                        </div>
+                        <div>
+                            <h2 class="font-display text-white text-xl tracking-[0.2em] uppercase">Ambika Builders</h2>
+                            <p class="text-[9px] tracking-[0.4em] uppercase text-primary mt-1">Signature Living</p>
+                        </div>
+                    </div>
+                    <p class="max-w-md text-sm leading-relaxed mb-8 font-light italic">
+                        "Crafting legacies through architectural excellence and uncompromising integrity. Since 2007, we have been the benchmark for luxury real estate in Indore."
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 border border-white/5 flex items-center justify-center hover:border-primary hover:text-primary transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-display text-white text-xs tracking-[0.3em] uppercase mb-6">Inquiries</h3>
+                    <ul class="text-sm space-y-4 font-light">
+                        <li class="flex items-start">
+                            <span class="material-symbols-outlined text-primary text-xl mr-4">location_on</span>
+                            <span class="leading-relaxed">102, Silver Arcade,<br>Near Chappan, Indore, MP 452001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="material-symbols-outlined text-primary text-xl mr-4">call</span>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="material-symbols-outlined text-primary text-xl mr-4">mail</span>
+                            <span class="tracking-wider">concierge@ambikabuilders.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-display text-white text-xs tracking-[0.3em] uppercase mb-6">Private Updates</h3>
+                    <p class="text-xs mb-6 leading-relaxed font-light">Join our inner circle for exclusive early access to premium developments.</p>
+                    <form class="relative group" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-white/5 border-white/10 text-[10px] uppercase tracking-[0.2em] px-0 py-4 border-t-0 border-x-0 border-b focus:border-primary focus:ring-0 outline-none transition-all duration-500 placeholder:text-slate-600" required>
+                        <button type="submit" class="absolute right-0 bottom-4 text-primary group-hover:translate-x-1 transition-transform duration-300">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] tracking-[0.4em] uppercase font-medium">
+                <p>© 2024 Ambika Builders & Real Estate. Reserved.</p>
+                <div class="flex space-x-8">
+                    <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-primary transition-colors">Legal</a>
+                    <a href="#" class="hover:text-primary transition-colors">Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917312531151" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform group">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.511 1.944.851 3.146.851 3.181 0 5.765-2.586 5.765-5.766 0-3.18-2.584-5.765-5.765-5.765zm3.387 8.313c-.154.434-.891.791-1.243.844-.353.053-.7.09-1.204-.104-.504-.194-1.127-.459-1.89-1.124-.763-.665-1.32-1.488-1.564-1.926-.243-.438-.023-.675.186-.908.21-.233.438-.514.656-.771.218-.257.291-.438.438-.731.146-.293.073-.549-.036-.771-.109-.222-.982-2.368-1.346-3.243-.364-.875-.728-.755-.982-.755-.254 0-.547-.008-.838-.008-.291 0-.765.109-1.166.547-.4.438-1.528 1.496-1.528 3.646 0 2.15 1.564 4.231 1.782 4.524.218.293 3.081 4.706 7.464 6.606 1.042.451 1.855.72 2.488.921 1.045.331 1.996.284 2.748.171.838-.127 2.582-1.056 2.946-2.08.364-1.024.364-1.9.255-2.081-.109-.181-.4-.293-.838-.509z"/>
+        </svg>
+        <span class="absolute right-full mr-3 bg-surface-dark text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10">Quick WhatsApp Inquiry</span>
+    </a>
+    
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!-- 
+  Service Card Component
+  Usage: Copy this structure and replace the variables
+  
+  Variables:
+  - {{ICON}}: Material Symbol icon name (e.g., "gavel", "account_balance", "architecture")
+  - {{TITLE}}: Service title
+  - {{DESCRIPTION}}: Service description text
+  - {{FEATURES}}: Array of feature strings
+  - {{LINK_URL}}: Link to service detail (optional)
+-->
+
+<div class="group p-8 lg:p-10 bg-background-dark border border-white/5 hover:bg-surface-dark hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
+    <!-- Background Glow Effect -->
+    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 -mr-16 -mt-16 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+    
+    <!-- Icon -->
+    <div class="w-16 h-16 bg-white/5 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300 relative z-10">
+        <span class="material-symbols-outlined text-primary group-hover:text-background-dark text-4xl transition-colors duration-300">
+            {{ICON}}
+        </span>
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10">
+        <h3 class="font-display text-lg tracking-widest text-white mb-4 uppercase group-hover:text-primary transition-colors">
+            {{TITLE}}
+        </h3>
+        
+        <p class="text-sm leading-relaxed text-slate-400 mb-8 font-light">
+            {{DESCRIPTION}}
+        </p>
+        
+        <!-- Features List -->
+        <ul class="text-[11px] space-y-3 tracking-widest uppercase text-slate-500">
+            {{FEATURES}}
+        </ul>
+        
+        <!-- Optional Learn More Link -->
+        {{LINK_URL}}
+    </div>
+</div>
+
+<!-- 
+  Feature Item Template (use inside {{FEATURES}}):
+  <li class="flex items-center">
+      <span class="w-1 h-1 bg-primary/40 mr-3"></span>
+      Feature Name
+  </li>
+-->
+
+<!-- 
+  Optional Link Template (use for {{LINK_URL}}):
+  <a href="services-detail.html" class="inline-flex items-center mt-6 text-primary text-[11px] uppercase tracking-widest font-bold group-hover:text-primary-light transition-colors">
+      Learn More
+      <span class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </a>
+-->
+
+<!-- 
+  Example Usage in Services Grid:
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
+      
+      <!-- Legal Service -->
+      <div class="service-card">
+          <span class="icon">gavel</span>
+          <h3>Legal & Documentation</h3>
+          <p>Meticulous assistance with RERA compliance, property mutation, and verification of title deeds.</p>
+          <ul>
+              <li>RERA Registration</li>
+              <li>Property Mutation</li>
+              <li>Title Search Reports</li>
+          </ul>
+      </div>
+      
+      <!-- Financial Service -->
+      <div class="service-card">
+          <span class="icon">account_balance</span>
+          <h3>Financial Support</h3>
+          <p>Exclusive partnerships with elite financial institutions to secure premium home loan rates.</p>
+          <ul>
+              <li>Priority Processing</li>
+              <li>Portfolio Management</li>
+              <li>Flexible Repayment</li>
+          </ul>
+      </div>
+      
+      <!-- Vaastu Service -->
+      <div class="service-card">
+          <span class="icon">architecture</span>
+          <h3>Vaastu Shastra</h3>
+          <p>Integrating ancient Vedic wisdom with modern architecture to enhance positive energy.</p>
+          <ul>
+              <li>Energy Mapping</li>
+              <li>Vedic Alignment</li>
+              <li>Remedial Design</li>
+          </ul>
+      </div>
+      
+      <!-- Asset Management -->
+      <div class="service-card">
+          <span class="icon">real_estate_agent</span>
+          <h3>Asset Management</h3>
+          <p>Comprehensive property yields through professional tenant screening and maintenance.</p>
+          <ul>
+              <li>Tenant Acquisition</li>
+              <li>ROI Optimization</li>
+              <li>Legal Contracts</li>
+          </ul>
+      </div>
+      
+  </div>
+-->

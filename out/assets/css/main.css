@@ -1,0 +1,333 @@
+/* ==========================================================================
+   Ambika Builders - Design System
+   Unified CSS Variables & Shared Styles
+   ========================================================================== */
+
+:root {
+  /* Primary Colors - Gold Palette */
+  --primary: #C5A059;
+  --primary-light: #D4AF37;
+  --primary-dark: #B8860B;
+  --primary-muted: #E2C285;
+  
+  /* Background Colors */
+  --bg-dark: #0B0E14;
+  --bg-darker: #0A0E17;
+  --bg-default: #121212;
+  --bg-navy: #0B1221;
+  
+  /* Surface Colors */
+  --surface-dark: #161B26;
+  --surface-default: #151B23;
+  --surface-light: #1E1E1E;
+  --surface-charcoal: #1A1A1A;
+  --surface-navy: #141C2F;
+  
+  /* Border Colors */
+  --border-light: rgba(197, 160, 89, 0.3);
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-default: rgba(255, 255, 255, 0.05);
+  
+  /* Text Colors */
+  --text-white: #FFFFFF;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-subtle: rgba(255, 255, 255, 0.4);
+  --text-faint: rgba(255, 255, 255, 0.2);
+  
+  /* Shadows */
+  --shadow-primary: 0 0 20px rgba(197, 160, 89, 0.2);
+  --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.4);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-default: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-slower: 0.7s ease;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+.font-display {
+  font-family: 'Playfair Display', 'Cinzel', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Cinzel', serif;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   Material Icons Setup
+   ========================================================================== */
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Glass & Card Effects
+   ========================================================================== */
+
+.glass-panel {
+  background: rgba(22, 27, 38, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-light);
+}
+
+.glass-card {
+  background: rgba(22, 27, 38, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+.card-hover {
+  transition: all var(--transition-default);
+}
+
+.card-hover:hover {
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-primary);
+}
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+
+.form-input-dark {
+  background-color: #0F172A;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.form-input-dark:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.form-input-dark::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-default);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  box-shadow: var(--shadow-primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all var(--transition-default);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--bg-dark);
+}
+
+/* ==========================================================================
+   Gradient Effects
+   ========================================================================== */
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-muted) 50%, var(--primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-overlay-dark {
+  background: linear-gradient(to bottom, rgba(11, 14, 20, 0.9), rgba(11, 14, 20, 0.7));
+}
+
+/* ==========================================================================
+   Animation Classes
+   ========================================================================== */
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-triggered animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.border-gold-subtle {
+  border-color: rgba(197, 160, 89, 0.15);
+}
+
+.shadow-gold {
+  box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.5);
+}
+
+/* Map styling for dark theme */
+.map-dark {
+  filter: grayscale(1) invert(1) contrast(1.2) brightness(0.7);
+}
+
+/* Image hover effects */
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.7s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Grayscale effect that removes on hover */
+.grayscale-hover {
+  filter: grayscale(50%);
+  transition: filter 0.5s ease;
+}
+
+.grayscale-hover:hover {
+  filter: grayscale(0%);
+}
+
+/* ==========================================================================
+   Layout Utilities
+   ========================================================================== */
+
+.container-wide {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 8rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}

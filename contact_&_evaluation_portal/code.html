@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ambika Builders | Contact &amp; Evaluation Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #C5A059;
+            --background-dark: #0A0E17;
+            --accent-dark: #161B26;
+            --charcoal: #121212;
+            --border-light: rgba(197, 160, 89, 0.3);
+        }
+        body {
+            background-color: var(--background-dark);
+            color: #E2E8F0;
+        }
+        .glass-card {
+            background: rgba(22, 27, 38, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-light);
+        }
+        .dark-input {
+            background-color: #0F172A !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: white !important;
+        }
+        .dark-input:focus {
+            border-color: var(--primary) !important;
+            ring: 1px solid var(--primary) !important;
+        }
+        .step-indicator.active {
+            background-color: var(--primary);
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.5);
+        }
+        .gold-button {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .gold-button:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
+        }
+        .map-skin {
+            filter: grayscale(1) invert(1) contrast(1.2) brightness(0.7);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#C5A059",
+                        "background-dark": "#0A0E17",
+                        "accent-dark": "#161B26",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="font-sans antialiased">
+<nav class="sticky top-0 z-50 border-b border-slate-800 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-display font-bold text-xl shadow-lg">A</div>
+<div class="hidden sm:block">
+<h1 class="font-display text-lg font-bold leading-none tracking-tight text-white">AMBIKA</h1>
+<p class="text-[10px] uppercase tracking-widest text-primary font-semibold">Builders &amp; Real Estate</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#">Developments</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#">Services</a>
+<button class="gold-button px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">phone</span>
+                Contact Now
+            </button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<section class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="font-display text-5xl md:text-6xl mb-6 text-white leading-tight">Partner with Excellence</h2>
+<p class="text-lg text-slate-400 leading-relaxed">
+            Whether you are listing a luxury rowhouse in Mahalaxmi Nagar or seeking a professional property valuation, the experts at Ambika Builders are here to guide you through your real estate journey.
+        </p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-7 space-y-12">
+<div class="glass-card p-8 rounded-xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl text-primary">apartment</span>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">sell</span>
+</div>
+<div>
+<h3 class="text-2xl font-display text-white">List Your Property</h3>
+<p class="text-sm text-slate-400">Maximize your property's value with our network</p>
+</div>
+</div>
+<div class="flex gap-2 mb-10">
+<div class="h-1 flex-1 step-indicator active rounded-full"></div>
+<div class="h-1 flex-1 bg-slate-800 rounded-full"></div>
+<div class="h-1 flex-1 bg-slate-800 rounded-full"></div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-400">Property Type</label>
+<select class="w-full dark-input rounded-lg focus:ring-primary focus:border-primary">
+<option>Luxury Rowhouse</option>
+<option>Independent Villa</option>
+<option>Commercial Plot</option>
+<option>Penthouse</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-400">Location</label>
+<input class="w-full dark-input rounded-lg focus:ring-primary focus:border-primary" placeholder="e.g. Mahalaxmi Nagar" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-400">Expected Price Range</label>
+<div class="flex items-center gap-4">
+<input class="flex-1 accent-primary" type="range"/>
+<span class="text-primary font-semibold font-display">₹1.5Cr+</span>
+</div>
+</div>
+<button class="w-full gold-button py-4 rounded-lg font-bold flex items-center justify-center gap-2 group" type="button">
+                        Next Step
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+<div class="p-8 border-2 border-dashed border-slate-800 rounded-xl bg-accent-dark/40">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h4 class="text-xl font-display mb-2 text-white">Professional Market Evaluation</h4>
+<p class="text-sm text-slate-400 mb-6">Unsure about your property's worth? Get a data-backed valuation report from our experts.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="dark-input border-none rounded-lg text-sm p-3" placeholder="Owner Name" type="text"/>
+<input class="dark-input border-none rounded-lg text-sm p-3" placeholder="Phone Number" type="tel"/>
+</div>
+</div>
+<div class="w-full md:w-auto">
+<button class="w-full md:w-auto px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-200 transition-all shadow-lg">
+                            Get Report
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-12">
+<div class="bg-primary p-[1px] rounded-xl shadow-2xl">
+<div class="bg-accent-dark p-8 rounded-[calc(0.75rem-1px)] h-full">
+<h3 class="text-2xl font-display mb-2 text-white">Request a Callback</h3>
+<p class="text-sm text-slate-400 mb-8">Prefer a voice call? Leave your details and we'll reach out shortly.</p>
+<form class="space-y-4">
+<input class="w-full dark-input rounded-lg py-3 px-4" placeholder="Full Name" type="text"/>
+<input class="w-full dark-input rounded-lg py-3 px-4" placeholder="Mobile Number" type="tel"/>
+<div class="flex gap-2">
+<div class="bg-primary/10 text-primary p-2 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<select class="flex-1 dark-input rounded-lg text-sm py-3 px-4">
+<option>Call me immediately</option>
+<option>Call me in 1 hour</option>
+<option>Call me tomorrow morning</option>
+</select>
+</div>
+<button class="w-full gold-button py-4 rounded-lg font-bold uppercase tracking-widest text-sm shadow-lg shadow-primary/20">
+                            Connect with Agent
+                        </button>
+</form>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden shadow-2xl h-80 border border-slate-800">
+<img alt="Map View Mahalaxmi Nagar Indore" class="w-full h-full object-cover map-skin group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAonaCANKFSbswPxbwc8CKYz2Al12eLew8IDPZcwByaXAo6CqqEK-yc84jTJAVv8N3zZ2_rKilnhqJITspoOFFjn1QWxRLjJhZEgvbhYPXL7bSrMPjKkRUiXREWR6aO042prC7DY6K1VujhEUZboP_GHxsp1X_psSXqYdYyGEHx-aYUFQpLBggR7AIhgpuRephoZSZBF-H4A2I4ZpTaEtUhZtF9q33OUMI7tzhjUmr8r8RtyUTMxNk56qZcvAO0ZfG9nwxI50ukaTw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent flex flex-col justify-end p-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary p-3 rounded-lg shadow-xl">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<div>
+<h4 class="text-white font-display text-lg">The Hub Office</h4>
+<p class="text-slate-300 text-xs">Mahalaxmi Nagar, Indore, MP 452010</p>
+<button class="mt-3 text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 group/btn">
+                                Get Directions 
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-50" href="#">
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.544.916 3.21 1.403 4.909 1.404 5.432.001 9.853-4.42 9.855-9.852 0-2.632-1.025-5.106-2.887-6.97-1.861-1.863-4.336-2.888-6.97-2.888-5.433 0-9.855 4.421-9.856 9.854-.001 1.834.508 3.619 1.47 5.163l-.963 3.518 3.601-.945h-.001zM11.5 16.5c-.2 0-.4-.1-.5-.2-1.4-1.1-2.4-2.5-3-4.2-.1-.4.1-.9.5-1.1s.9-.1 1.1.3c.4 1.2 1.2 2.3 2.3 3.1.2.1.3.4.3.7-.1.2-.4.4-.7.4zm4.1-3c-.1 0-.2 0-.3-.1l-1.5-.7c-.3-.1-.4-.5-.3-.8s.5-.4.8-.3l1.5.7c.3.1.4.5.3.8-.1.3-.4.4-.8.4z"></path>
+</svg>
+</a>
+<footer class="bg-accent-dark border-t border-slate-800 mt-20">
+<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-8 h-8 bg-primary flex items-center justify-center rounded-lg text-white font-display font-bold text-lg">A</div>
+<h2 class="font-display text-xl font-bold text-white uppercase tracking-tighter">Ambika Builders</h2>
+</div>
+<p class="text-sm text-slate-400 max-w-sm mb-6 leading-relaxed">
+                    Redefining the landscape of Indore since 2007. Specializing in luxury rowhouses and premium residential developments.
+                </p>
+<div class="flex gap-4">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">Indore Office</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                        The Hub, 4th Floor, Mahalaxmi Nagar, Indore, MP 452010
+                    </li>
+<li class="flex gap-2">
+<span class="material-symbols-outlined text-primary text-lg">phone</span>
+                        +91 731-4000-000
+                    </li>
+</ul>
+</div>
+<div>
+<h5 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">Quick Links</h5>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-primary" href="#">Current Projects</a></li>
+<li><a class="hover:text-primary" href="#">Legal Documentation</a></li>
+<li><a class="hover:text-primary" href="#">Customer Portal</a></li>
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between text-xs text-slate-500 uppercase tracking-widest gap-4">
+<p>© 2024 Ambika Builders &amp; Real Estate. All Rights Reserved.</p>
+<p>Designed for Luxury Living</p>
+</div>
+</div>
+</footer>
+
+</body></html>

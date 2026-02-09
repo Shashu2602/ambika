@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambika Builders & Real Estate | Luxury Homes in Indore</title>
+    <meta name="description" content="Premier real estate developer in Indore since 2007. Specializing in luxury rowhouses, premium plots, and residential properties.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#C5A059',
+                            light: '#D4AF37',
+                            dark: '#B8860B',
+                            muted: '#E2C285'
+                        },
+                        background: {
+                            dark: '#0B0E14',
+                            darker: '#0A0E17',
+                            DEFAULT: '#121212',
+                            navy: '#0B1221'
+                        },
+                        surface: {
+                            dark: '#161B26',
+                            DEFAULT: '#151B23',
+                            light: '#1E1E1E',
+                            charcoal: '#1A1A1A',
+                            navy: '#141C2F'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'Cinzel', 'serif'],
+                        sans: ['Inter', 'Montserrat', 'Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(11, 14, 20, 0.95) 0%, rgba(11, 14, 20, 0.6) 50%, rgba(11, 14, 20, 0.8) 100%);
+        }
+        .glass-panel {
+            background: rgba(22, 27, 38, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #E2C285 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .counter-value {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 bg-background-dark/90 backdrop-blur-lg border-b border-white/5 py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-12">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 bg-primary flex items-center justify-center rounded shadow-[0_0_15px_rgba(197,160,89,0.3)] transition-transform group-hover:scale-105">
+                        <span class="font-display text-white font-bold text-xl">A</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-lg font-display font-bold text-white tracking-tight block leading-none">Ambika</span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-primary">Builders & Real Estate</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-10">
+                    <a href="index.html" class="text-[11px] font-bold tracking-[0.2em] uppercase text-primary transition-colors relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-full h-[1px] bg-primary"></span>
+                    </a>
+                    <a href="pages/properties.html" class="text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                        Properties
+                        <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="pages/services.html" class="text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                        Services
+                        <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="pages/about.html" class="text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="pages/contact.html" class="text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                
+                <div class="hidden lg:block">
+                    <a href="pages/contact.html" class="bg-primary hover:bg-primary-light text-background-dark px-6 py-2.5 rounded-sm text-[10px] font-black uppercase tracking-[0.15em] transition-all inline-flex items-center space-x-2">
+                        <span>List Property</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-white hover:text-primary transition-colors" aria-label="Toggle menu">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-[72px] bg-background-dark/98 backdrop-blur-xl z-40">
+            <div class="flex flex-col items-center justify-center h-full space-y-8 px-6">
+                <a href="index.html" class="text-2xl font-display text-primary transition-colors">Home</a>
+                <a href="pages/properties.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Properties</a>
+                <a href="pages/services.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Services</a>
+                <a href="pages/about.html" class="text-2xl font-display text-white hover:text-primary transition-colors">About</a>
+                <a href="pages/contact.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Contact</a>
+                <a href="pages/contact.html" class="bg-primary text-background-dark px-8 py-3 rounded-sm text-[12px] font-black uppercase tracking-[0.15em] mt-8">
+                    List Property
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="h-[92px]"></div>
+    
+    <!-- Hero Section -->
+    <section class="relative h-[calc(100vh-92px)] min-h-[700px] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" 
+                 alt="Luxury Rowhouse Architecture" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <div class="max-w-3xl space-y-8">
+                <div class="flex items-center space-x-4">
+                    <span class="h-px w-12 bg-primary"></span>
+                    <span class="text-primary text-[10px] font-bold tracking-[0.4em] uppercase">Premium Real Estate in Indore</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-display text-white leading-[0.9] tracking-tight">
+                    Happiness<br>
+                    <span class="italic text-gold-gradient">Per Square Feet</span>
+                </h1>
+                
+                <p class="text-lg text-white/60 font-light max-w-lg leading-relaxed border-l border-primary/30 pl-6">
+                    Crafting exquisite rowhouses and luxury spaces since 2007. Experience the pinnacle of modern living in Indore's most prestigious locations.
+                </p>
+                
+                <div class="pt-4">
+                    <a href="#properties" class="bg-primary hover:bg-primary-light text-background-dark px-10 py-5 font-black uppercase tracking-[0.2em] transition-all inline-flex items-center group text-[11px]">
+                        Explore Properties
+                        <span class="material-symbols-outlined ml-3 text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Search Panel -->
+        <div class="absolute bottom-16 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6 hidden lg:block">
+            <div class="glass-panel p-8 shadow-2xl">
+                <div class="grid grid-cols-4 gap-6 items-end">
+                    <div class="space-y-3">
+                        <label class="text-[9px] uppercase tracking-[0.3em] font-black text-primary/70">Property Type</label>
+                        <select class="w-full bg-white/5 border-white/10 text-white/80 text-xs rounded-none py-3 px-4 focus:ring-primary focus:border-primary appearance-none cursor-pointer border">
+                            <option value="" class="bg-background-dark">All Types</option>
+                            <option value="rowhouse" class="bg-background-dark">Luxury Rowhouse</option>
+                            <option value="apartment" class="bg-background-dark">Premium Apartment</option>
+                            <option value="villa" class="bg-background-dark">Villa</option>
+                            <option value="plot" class="bg-background-dark">Commercial Plot</option>
+                        </select>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="text-[9px] uppercase tracking-[0.3em] font-black text-primary/70">Location</label>
+                        <select class="w-full bg-white/5 border-white/10 text-white/80 text-xs rounded-none py-3 px-4 focus:ring-primary focus:border-primary appearance-none cursor-pointer border">
+                            <option value="" class="bg-background-dark">All Locations</option>
+                            <option value="vijay-nagar" class="bg-background-dark">Vijay Nagar</option>
+                            <option value="mahalaxmi-nagar" class="bg-background-dark">Mahalaxmi Nagar</option>
+                            <option value="super-corridor" class="bg-background-dark">Super Corridor</option>
+                            <option value="nipania" class="bg-background-dark">Nipania</option>
+                        </select>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="text-[9px] uppercase tracking-[0.3em] font-black text-primary/70">Budget Range</label>
+                        <select class="w-full bg-white/5 border-white/10 text-white/80 text-xs rounded-none py-3 px-4 focus:ring-primary focus:border-primary appearance-none cursor-pointer border">
+                            <option value="" class="bg-background-dark">Any Budget</option>
+                            <option value="50l-1cr" class="bg-background-dark">₹50L - ₹1Cr</option>
+                            <option value="1cr-2cr" class="bg-background-dark">₹1Cr - ₹2Cr</option>
+                            <option value="2cr-3cr" class="bg-background-dark">₹2Cr - ₹3Cr</option>
+                            <option value="3cr-plus" class="bg-background-dark">Above ₹3Cr</option>
+                        </select>
+                    </div>
+                    <button onclick="window.location.href='pages/properties.html'" class="bg-white hover:bg-primary text-background-dark h-12 font-black uppercase tracking-[0.2em] text-[10px] transition-all duration-300 flex items-center justify-center">
+                        Find Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="py-20 bg-[#0a0a0a] border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+                <div class="space-y-2">
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-primary counter-value" data-target="19">0</h3>
+                    <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">Years of Legacy</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-primary counter-value" data-target="1200">0</h3>
+                    <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">Happy Families</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-primary counter-value" data-target="45">0</h3>
+                    <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">Projects Delivered</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-primary counter-value" data-target="150">0</h3>
+                    <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">Active Listings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Properties Section -->
+    <section id="properties" class="py-24 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4 md:space-y-0">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="h-px w-8 bg-primary"></span>
+                        <h2 class="text-[10px] font-black text-primary uppercase tracking-[0.4em]">Curated Portfolio</h2>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl font-display text-white">Featured Properties</h3>
+                </div>
+                <a href="pages/properties.html" class="text-[10px] font-black uppercase tracking-[0.3em] border-b border-primary/30 pb-2 hover:border-primary transition-all text-white/70 hover:text-white">
+                    View All Projects
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                
+                <!-- Property 1 -->
+                <div class="group relative bg-surface-dark border border-white/5 overflow-hidden transition-all duration-700 hover:border-primary/20 rounded-sm">
+                    <div class="relative h-[400px] lg:h-[450px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" 
+                             alt="Ambika Heights" 
+                             class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-primary text-background-dark text-[9px] font-black px-4 py-1.5 uppercase tracking-widest">New Launch</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6 lg:p-8 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-1">
+                                <h4 class="text-xl lg:text-2xl font-display text-white group-hover:text-primary transition-colors">Ambika Heights</h4>
+                                <p class="text-xs text-white/40 flex items-center font-medium tracking-wide">
+                                    <span class="material-icons text-primary text-[14px] mr-1.5">location_on</span>
+                                    Vijay Nagar, Indore
+                                </p>
+                            </div>
+                            <span class="text-primary font-bold text-lg tracking-tight whitespace-nowrap">₹2.4 Cr<span class="text-[10px] font-normal text-white/30 ml-1">*</span></span>
+                        </div>
+                        <div class="flex items-center space-x-6 lg:space-x-8 pt-4 border-t border-white/5 text-[9px] font-bold uppercase tracking-[0.15em] text-white/50">
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">king_bed</span> 4 BHK</span>
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">square_foot</span> 3200 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="group relative bg-surface-dark border border-white/5 overflow-hidden transition-all duration-700 hover:border-primary/20 rounded-sm">
+                    <div class="relative h-[400px] lg:h-[450px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" 
+                             alt="The Grand Ambika" 
+                             class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-white text-background-dark text-[9px] font-black px-4 py-1.5 uppercase tracking-widest">Limited Edition</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6 lg:p-8 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-1">
+                                <h4 class="text-xl lg:text-2xl font-display text-white group-hover:text-primary transition-colors">The Grand Ambika</h4>
+                                <p class="text-xs text-white/40 flex items-center font-medium tracking-wide">
+                                    <span class="material-icons text-primary text-[14px] mr-1.5">location_on</span>
+                                    Mahalaxmi Nagar, Indore
+                                </p>
+                            </div>
+                            <span class="text-primary font-bold text-lg tracking-tight whitespace-nowrap">₹3.8 Cr<span class="text-[10px] font-normal text-white/30 ml-1">*</span></span>
+                        </div>
+                        <div class="flex items-center space-x-6 lg:space-x-8 pt-4 border-t border-white/5 text-[9px] font-bold uppercase tracking-[0.15em] text-white/50">
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">king_bed</span> 5 BHK</span>
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">square_foot</span> 4500 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="group relative bg-surface-dark border border-white/5 overflow-hidden transition-all duration-700 hover:border-primary/20 rounded-sm">
+                    <div class="relative h-[400px] lg:h-[450px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" 
+                             alt="Ambika Meadows" 
+                             class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6 lg:p-8 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-1">
+                                <h4 class="text-xl lg:text-2xl font-display text-white group-hover:text-primary transition-colors">Ambika Meadows</h4>
+                                <p class="text-xs text-white/40 flex items-center font-medium tracking-wide">
+                                    <span class="material-icons text-primary text-[14px] mr-1.5">location_on</span>
+                                    Super Corridor, Indore
+                                </p>
+                            </div>
+                            <span class="text-primary font-bold text-lg tracking-tight whitespace-nowrap">₹1.9 Cr<span class="text-[10px] font-normal text-white/30 ml-1">*</span></span>
+                        </div>
+                        <div class="flex items-center space-x-6 lg:space-x-8 pt-4 border-t border-white/5 text-[9px] font-bold uppercase tracking-[0.15em] text-white/50">
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">king_bed</span> 3 BHK</span>
+                            <span class="flex items-center"><span class="material-symbols-outlined text-lg mr-2 text-primary/60">square_foot</span> 2400 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Prime Destinations Section -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-[10px] font-black text-primary uppercase tracking-[0.5em]">Neighborhoods</h2>
+                <h3 class="text-4xl md:text-5xl font-display text-white">Prime Destinations</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
+                <div class="text-center group">
+                    <div class="w-20 h-20 lg:w-24 lg:h-24 mx-auto border border-white/5 bg-surface-dark flex items-center justify-center mb-6 lg:mb-8 group-hover:border-primary/40 transition-all duration-500 rounded-sm">
+                        <span class="material-symbols-outlined text-3xl lg:text-4xl text-primary group-hover:scale-110 transition-transform">apartment</span>
+                    </div>
+                    <h4 class="text-lg lg:text-xl font-display text-white mb-3">Vijay Nagar</h4>
+                    <p class="text-[13px] text-white/40 leading-relaxed px-4 lg:px-6 font-light">The heart of commercial growth and urban convenience in Indore.</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 lg:w-24 lg:h-24 mx-auto border border-white/5 bg-surface-dark flex items-center justify-center mb-6 lg:mb-8 group-hover:border-primary/40 transition-all duration-500 rounded-sm">
+                        <span class="material-symbols-outlined text-3xl lg:text-4xl text-primary group-hover:scale-110 transition-transform">park</span>
+                    </div>
+                    <h4 class="text-lg lg:text-xl font-display text-white mb-3">Mahalaxmi Nagar</h4>
+                    <p class="text-[13px] text-white/40 leading-relaxed px-4 lg:px-6 font-light">Serene residential pockets with world-class healthcare & education.</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 lg:w-24 lg:h-24 mx-auto border border-white/5 bg-surface-dark flex items-center justify-center mb-6 lg:mb-8 group-hover:border-primary/40 transition-all duration-500 rounded-sm">
+                        <span class="material-symbols-outlined text-3xl lg:text-4xl text-primary group-hover:scale-110 transition-transform">speed</span>
+                    </div>
+                    <h4 class="text-lg lg:text-xl font-display text-white mb-3">Super Corridor</h4>
+                    <p class="text-[13px] text-white/40 leading-relaxed px-4 lg:px-6 font-light">The future of Indore. High ROI and ultra-modern infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-24 bg-background-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                <div class="relative order-2 lg:order-1">
+                    <div class="aspect-[4/5] overflow-hidden grayscale-[50%] hover:grayscale-0 transition-all duration-700 border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" 
+                             alt="Office Interior" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 lg:-bottom-8 -right-6 lg:-right-8 bg-primary p-8 lg:p-12 shadow-2xl">
+                        <p class="text-background-dark text-2xl lg:text-4xl font-display italic leading-none">"Legacy of Trust"</p>
+                        <p class="text-background-dark/60 text-[9px] uppercase tracking-[0.3em] mt-3 lg:mt-4 font-black">Established 2007</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-8 lg:space-y-10 order-1 lg:order-2">
+                    <div class="space-y-4">
+                        <h2 class="text-[10px] font-black text-primary uppercase tracking-[0.4em]">The Philosophy</h2>
+                        <h3 class="text-4xl md:text-5xl lg:text-6xl font-display text-white leading-tight">Beyond Brick and Mortar.</h3>
+                    </div>
+                    <p class="text-white/50 leading-relaxed text-base lg:text-lg font-light">
+                        At Ambika Builders, we don't just construct buildings; we curate lifestyles. For over 19 years, we've been at the forefront of Indore's real estate evolution, specializing in luxury rowhouses that combine architectural excellence with emotional value.
+                    </p>
+                    <div class="space-y-6 lg:space-y-8">
+                        <div class="flex items-start space-x-4 lg:space-x-6">
+                            <span class="material-symbols-outlined text-primary text-2xl lg:text-3xl flex-shrink-0">verified</span>
+                            <div>
+                                <h5 class="font-black text-white uppercase text-[11px] tracking-[0.2em] mb-1">Uncompromising Quality</h5>
+                                <p class="text-sm text-white/40 font-light">Highest grade materials and artisanal craftsmanship in every corner.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 lg:space-x-6">
+                            <span class="material-symbols-outlined text-primary text-2xl lg:text-3xl flex-shrink-0">auto_awesome</span>
+                            <div>
+                                <h5 class="font-black text-white uppercase text-[11px] tracking-[0.2em] mb-1">Timeless Design</h5>
+                                <p class="text-sm text-white/40 font-light">Modern aesthetics that age gracefully and stand the test of time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center space-y-4 mb-12 lg:mb-16">
+                <h2 class="text-[10px] font-black text-primary uppercase tracking-[0.5em]">Consultation</h2>
+                <h3 class="text-4xl md:text-5xl font-display text-white">Begin Your Journey</h3>
+            </div>
+            
+            <form id="contact-form" class="bg-surface-dark p-8 lg:p-12 border border-white/5 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mb-6 lg:mb-10">
+                    <div class="space-y-3">
+                        <label class="text-[9px] uppercase font-black tracking-[0.3em] text-white/40">Full Name</label>
+                        <input type="text" 
+                               name="name"
+                               required
+                               class="w-full bg-transparent border-0 border-b border-white/10 rounded-none py-4 px-0 focus:ring-0 focus:border-primary text-white placeholder:text-white/20 text-base"
+                               placeholder="John Doe">
+                    </div>
+                    <div class="space-y-3">
+                        <label class="text-[9px] uppercase font-black tracking-[0.3em] text-white/40">Contact Number</label>
+                        <input type="tel" 
+                               name="phone"
+                               required
+                               class="w-full bg-transparent border-0 border-b border-white/10 rounded-none py-4 px-0 focus:ring-0 focus:border-primary text-white placeholder:text-white/20 text-base"
+                               placeholder="+91 XXXXX XXXXX">
+                    </div>
+                </div>
+                <div class="space-y-3 mb-8 lg:mb-12">
+                    <label class="text-[9px] uppercase font-black tracking-[0.3em] text-white/40">Message</label>
+                    <textarea name="message" 
+                              rows="3"
+                              required
+                              class="w-full bg-transparent border-0 border-b border-white/10 rounded-none py-4 px-0 focus:ring-0 focus:border-primary text-white placeholder:text-white/20 resize-none text-base"
+                              placeholder="How can we help you find your dream home?"></textarea>
+                </div>
+                <button type="submit" 
+                        class="w-full bg-primary hover:bg-primary-light text-background-dark py-5 lg:py-6 font-black uppercase tracking-[0.3em] text-[11px] transition-all flex items-center justify-center space-x-2">
+                    <span>Send Inquiry</span>
+                    <span class="material-symbols-outlined text-lg">send</span>
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-background-dark pt-20 lg:pt-24 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 mb-12 lg:mb-16">
+                
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary flex items-center justify-center rounded shadow-[0_0_15px_rgba(197,160,89,0.3)]">
+                            <span class="font-display text-white font-bold text-xl">A</span>
+                        </div>
+                        <div>
+                            <span class="text-xl font-display font-bold text-white tracking-tight block leading-none">Ambika</span>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-primary">Builders</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-white/40 leading-relaxed mb-6 font-light">
+                        Elevating Indore's skyline since 2007 with bespoke luxury residences and premium urban developments.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-white/40 hover:bg-primary hover:text-background-dark transition-all" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-white/40 hover:bg-primary hover:text-background-dark transition-all" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-white/40 hover:bg-primary hover:text-background-dark transition-all" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Navigation -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-[0.3em] text-xs mb-6">Quick Navigation</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="pages/properties.html" class="text-white/40 hover:text-primary transition-colors">Investment Guide</a></li>
+                        <li><a href="pages/properties.html" class="text-white/40 hover:text-primary transition-colors">Current Projects</a></li>
+                        <li><a href="pages/about.html" class="text-white/40 hover:text-primary transition-colors">RERA Disclosures</a></li>
+                        <li><a href="pages/services.html" class="text-white/40 hover:text-primary transition-colors">Indore Real Estate</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Portfolio -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-[0.3em] text-xs mb-6">Our Portfolio</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="pages/properties.html" class="text-white/40 hover:text-primary transition-colors">Luxury Rowhouses</a></li>
+                        <li><a href="pages/properties.html" class="text-white/40 hover:text-primary transition-colors">Residential Plots</a></li>
+                        <li><a href="pages/properties.html" class="text-white/40 hover:text-primary transition-colors">Premium Townships</a></li>
+                        <li><a href="pages/services.html" class="text-white/40 hover:text-primary transition-colors">Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-[0.3em] text-xs mb-6">Join the Circle</h4>
+                    <p class="text-sm text-white/40 mb-6 font-light">Receive exclusive previews of upcoming launches.</p>
+                    <form id="newsletter-form" class="relative mb-6">
+                        <input type="email" 
+                               placeholder="Email Address" 
+                               class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-primary transition-colors"
+                               required>
+                        <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-primary hover:text-primary-light transition-colors">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                    <div class="space-y-3 text-sm text-white/40">
+                        <p class="flex items-center">
+                            <span class="material-symbols-outlined text-primary mr-3 text-lg">location_on</span>
+                            Indore, Madhya Pradesh
+                        </p>
+                        <p class="flex items-center">
+                            <span class="material-symbols-outlined text-primary mr-3 text-lg">call</span>
+                            +91 731 253 1151
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">
+                    © 2024 Ambika Builders & Real Estate. Excellence Defined.
+                </p>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-[10px] uppercase tracking-[0.3em] text-white/30 hover:text-primary font-bold">Privacy</a>
+                    <a href="#" class="text-[10px] uppercase tracking-[0.3em] text-white/30 hover:text-primary font-bold">Terms</a>
+                    <a href="#" class="text-[10px] uppercase tracking-[0.3em] text-white/30 hover:text-primary font-bold">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917312531151?text=Hi! I'm interested in Ambika Builders properties." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform group">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.511 1.944.851 3.146.851 3.181 0 5.765-2.586 5.765-5.766 0-3.18-2.584-5.765-5.765-5.765zm3.387 8.313c-.154.434-.891.791-1.243.844-.353.053-.7.09-1.204-.104-.504-.194-1.127-.459-1.89-1.124-.763-.665-1.32-1.488-1.564-1.926-.243-.438-.023-.675.186-.908.21-.233.438-.514.656-.771.218-.257.291-.438.438-.731.146-.293.073-.549-.036-.771-.109-.222-.982-2.368-1.346-3.243-.364-.875-.728-.755-.982-.755-.254 0-.547-.008-.838-.008-.291 0-.765.109-1.166.547-.4.438-1.528 1.496-1.528 3.646 0 2.15 1.564 4.231 1.782 4.524.218.293 3.081 4.706 7.464 6.606 1.042.451 1.855.72 2.488.921 1.045.331 1.996.284 2.748.171.838-.127 2.582-1.056 2.946-2.08.364-1.024.364-1.9.255-2.081-.109-.181-.4-.293-.838-.509z"/>
+        </svg>
+        <span class="absolute right-full mr-3 bg-surface-dark text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10">
+            Quick WhatsApp Inquiry
+        </span>
+    </a>
+    
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuToggle.querySelector('.material-symbols-outlined');
+                icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+            });
+            
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+                });
+            });
+        }
+        
+        // Navigation scroll effect
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.remove('py-5');
+                nav.classList.add('py-3', 'bg-background-dark');
+                nav.classList.remove('bg-background-dark/90');
+            } else {
+                nav.classList.add('py-5', 'bg-background-dark/90');
+                nav.classList.remove('py-3', 'bg-background-dark');
+            }
+        });
+        
+        // Counter animation
+        const counters = document.querySelectorAll('.counter-value');
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current) + '+';
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + '+';
+                    }
+                };
+                
+                // Start animation when element is in view
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(counter);
+            });
+        };
+        
+        animateCounters();
+        
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you shortly.');
+            e.target.reset();
+        });
+        
+        // Newsletter form submission
+        document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for subscribing!');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

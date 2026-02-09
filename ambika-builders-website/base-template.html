@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}} | Ambika Builders & Real Estate</title>
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#C5A059',
+                            light: '#D4AF37',
+                            dark: '#B8860B',
+                            muted: '#E2C285'
+                        },
+                        background: {
+                            dark: '#0B0E14',
+                            darker: '#0A0E17',
+                            DEFAULT: '#121212',
+                            navy: '#0B1221'
+                        },
+                        surface: {
+                            dark: '#161B26',
+                            DEFAULT: '#151B23',
+                            light: '#1E1E1E',
+                            charcoal: '#1A1A1A',
+                            navy: '#141C2F'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'Cinzel', 'serif'],
+                        sans: ['Inter', 'Montserrat', 'Plus Jakarta Sans', 'sans-serif']
+                    },
+                    fontSize: {
+                        '2xs': '9px',
+                        'xs': '10px',
+                        'sm': '11px'
+                    },
+                    letterSpacing: {
+                        'widest': '0.3em',
+                        'wider': '0.2em'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Page-specific styles will be inserted here -->
+    {{PAGE_STYLES}}
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="{{PAGE_TITLE}} | Ambika Builders & Real Estate">
+    <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+</head>
+<body class="bg-background-dark text-white font-sans antialiased">
+    
+    <!-- Navigation -->
+    {{NAVIGATION}}
+    
+    <!-- Main Content -->
+    <main>
+        {{PAGE_CONTENT}}
+    </main>
+    
+    <!-- Footer -->
+    {{FOOTER}}
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917312531151" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform group">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.511 1.944.851 3.146.851 3.181 0 5.765-2.586 5.765-5.766 0-3.18-2.584-5.765-5.765-5.765zm3.387 8.313c-.154.434-.891.791-1.243.844-.353.053-.7.09-1.204-.104-.504-.194-1.127-.459-1.89-1.124-.763-.665-1.32-1.488-1.564-1.926-.243-.438-.023-.675.186-.908.21-.233.438-.514.656-.771.218-.257.291-.438.438-.731.146-.293.073-.549-.036-.771-.109-.222-.982-2.368-1.346-3.243-.364-.875-.728-.755-.982-.755-.254 0-.547-.008-.838-.008-.291 0-.765.109-1.166.547-.4.438-1.528 1.496-1.528 3.646 0 2.15 1.564 4.231 1.782 4.524.218.293 3.081 4.706 7.464 6.606 1.042.451 1.855.72 2.488.921 1.045.331 1.996.284 2.748.171.838-.127 2.582-1.056 2.946-2.08.364-1.024.364-1.9.255-2.081-.109-.181-.4-.293-.838-.509z"/>
+        </svg>
+        <span class="absolute right-full mr-3 bg-surface-dark text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10">
+            Quick WhatsApp Inquiry
+        </span>
+    </a>
+    
+    <!-- Shared JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Page-specific scripts will be inserted here -->
+    {{PAGE_SCRIPTS}}
+    
+</body>
+</html>

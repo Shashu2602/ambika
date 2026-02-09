@@ -1,0 +1,137 @@
+<!-- 
+  Navigation Component
+  Usage: Include this in the {{NAVIGATION}} placeholder of base-template.html
+  Features: Responsive, sticky, backdrop blur, mobile menu, scroll effects
+-->
+
+<nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 bg-background-dark/90 backdrop-blur-lg border-b border-white/5 py-5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between h-12">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded shadow-[0_0_15px_rgba(197,160,89,0.3)] transition-transform group-hover:scale-105">
+                    <span class="font-display text-white font-bold text-xl">A</span>
+                </div>
+                <div class="hidden sm:block">
+                    <span class="text-lg font-display font-bold text-white tracking-tight block leading-none">Ambika</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-primary">Builders & Real Estate</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="nav-link text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pages/properties.html" class="nav-link text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                    Properties
+                    <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pages/services.html" class="nav-link text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                    Services
+                    <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pages/about.html" class="nav-link text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pages/contact.html" class="nav-link text-[11px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-primary transition-colors relative group">
+                    Contact
+                    <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="pages/contact.html" class="btn-primary inline-flex items-center space-x-2 rounded-sm">
+                    <span>List Property</span>
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="lg:hidden p-2 text-white hover:text-primary transition-colors" aria-label="Toggle menu">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-[72px] bg-background-dark/98 backdrop-blur-xl z-40">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 px-6">
+            <a href="index.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Home</a>
+            <a href="pages/properties.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Properties</a>
+            <a href="pages/services.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Services</a>
+            <a href="pages/about.html" class="text-2xl font-display text-white hover:text-primary transition-colors">About</a>
+            <a href="pages/contact.html" class="text-2xl font-display text-white hover:text-primary transition-colors">Contact</a>
+            <a href="pages/contact.html" class="btn-primary mt-8 rounded-sm">
+                List Property
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-[92px]"></div>
+
+<script>
+    // Navigation scroll effect
+    (function() {
+        const nav = document.getElementById('main-nav');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        
+        // Scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                nav.classList.remove('py-5');
+                nav.classList.add('py-3', 'bg-background-dark');
+                nav.classList.remove('bg-background-dark/90');
+            } else {
+                nav.classList.add('py-5', 'bg-background-dark/90');
+                nav.classList.remove('py-3', 'bg-background-dark');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Mobile menu toggle
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuToggle.querySelector('.material-symbols-outlined');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.textContent = 'menu';
+                    document.body.classList.remove('overflow-hidden');
+                } else {
+                    icon.textContent = 'close';
+                    document.body.classList.add('overflow-hidden');
+                }
+            });
+            
+            // Close menu on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+                    document.body.classList.remove('overflow-hidden');
+                });
+            });
+        }
+        
+        // Highlight active nav item
+        const currentPath = window.location.pathname;
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') && currentPath.includes(link.getAttribute('href'))) {
+                link.classList.add('text-primary');
+                link.classList.remove('text-white/70');
+                link.querySelector('span').classList.add('w-full');
+            }
+        });
+    })();
+</script>
